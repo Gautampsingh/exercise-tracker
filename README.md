@@ -1,1 +1,1 @@
-# Exercise tracker app - Mean stack development
+# Exercise tracker app
