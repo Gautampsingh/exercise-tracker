@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 
 // connect to DB
 const uri = process.env.ATLAS_URI;
-mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true }, (err, db) => {
+mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true }, (err, db) => {
     if (err) {
         console.log(err);
     } else {
